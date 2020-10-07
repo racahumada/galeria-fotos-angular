@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "trabalho-pratico2"
+    }
+  },
+  "defaultProject": "trabalho-pratico2",
+  "cli": {
+    "analytics": false
+  }
 }

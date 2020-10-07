@@ -1,0 +1,36 @@
+.title {
+  color: #fff;
+  text-align: center;
+  background-color: #ffbb00;
+  padding: 20px;
+}
+
+.box {
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  border: 2px solid #ffbb00;
+}
+
+.center {
+  padding: 5px;
+  text-align: center;
+}
+
+.images {
+  max-width: 360px;
+  max-height: 500px;
+}
+
+.control button {
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  background-color: #ffd665;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.control button:disabled {
+  background-color: #fdf1d0;
+}

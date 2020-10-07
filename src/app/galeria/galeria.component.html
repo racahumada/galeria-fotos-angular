@@ -1,0 +1,25 @@
+<div class="title">
+  <h3>{{ titulo }}</h3>
+</div>
+<div *ngIf="fotos" class="box">
+  <div *ngFor="let foto of fotos; index as i" class="center">
+    <img src="{{ foto }}" *ngIf="i == controleGaleria" class="images" />
+  </div>
+  <div class="center">Foto {{ controleGaleria + 1 }} de {{ fotos.length }}</div>
+  <div class="control center">
+    <button (click)="firstImg()" [disabled]="controleGaleria == 0">
+      Primeiro
+    </button>
+    <button (click)="prevImg()">Anterior</button>
+    <button (click)="nextImg()">Próximo</button>
+    <button
+      (click)="lastImg()"
+      [disabled]="controleGaleria == fotos.length - 1"
+    >
+      Último
+    </button>
+  </div>
+</div>
+<div *ngIf="!fotos">
+  <p class="center">Nenhuma foto</p>
+</div>
